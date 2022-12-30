@@ -1,0 +1,123 @@
+if you want to  open the link in next tab  in html-> <a href="https//:avbkjx/" target="_blank"></a>
+if you want to give extra details to html tags, use attributes(name = "value") -> <ol> <ul type = "A"></ul></ol>
+if you want to go from next tab to previous tab using links -> <a href="../index.html">Home</a>,here previous tab is index.html 
+i.e it is the parent
+
+internal links in html : 
+if you want back to top -> <a href = "#">back to top</a>
+if you want top to back in a page -> <a href="#comments">go to comments</a> becoz in comments section te div id is comments
+
+block elemnts:
+    <h></h>,<p></p>,<div></div> are all block elemnts
+    <img> <a href> are all inline elemnets
+        
+        
+forms:
+input id is to be given in the lable for ="" and required is used that it cannot skip
+palceholder is used to give the example of how it is to be in the format.
+name is used in the input tag,becoz it is more important to retieve the value which user enters.
+
+<lable for="user">username</lable>
+<input type="text" id ="user" name = username required placeholder="abc@xxx.com" disabled >
+
+
+radio buttons and checkbox are having both name and value becoz the user just select the options, if we need 
+to retrive the value ,we are giving the value of options.
+* we are giving the same name to all becoz the user slects only one options.
+
+<input type ="radio" name = "gender" value="female">
+<input type ="radio" name = "gender" value="male">
+<input type ="radio" name = "gender" value="other">
+
+To have many options we go with select and options 
+<select name="month-selected">
+    <options>Jan</options>
+    <options>Feb</options>
+</select>
+<textarea></textarea>
+<button></button>
+
+Form attributes:
+<form action ="" method = " get/post">
+</form>
+
+get is used get some information from the server without any change in database but we can see the values of the user
+in the url ,so it is not secure
+
+post method is used to send the values to the server to process it.
+
+
+Media tags:
+it can be for multiple media resource
+<audio controls>
+    <source src="static/audio.mp3" type="audio.mp3">
+    <source src="static/audio.mp3" type="audio.mp3">
+    <source src="static/audio.mp3" type="audio.mp3">
+</audio>
+<video controls>
+    <source src="static/video.mp4" type="video.mp3">
+</video>
+<figure>
+
+</figure>
+
+
+CSS:
+
+rem vs em : rem goes with its font size of root such as html,body but em goes with its parent div
+
+html{
+    font-size :20px;
+}
+then rem adjusts according to above for fonts. 
+
+if you want to adjusts the box size then use em  for bigger or smaller to its parent div.
+5
+Margins:
+
+Vertical margins of 2 divs or 2 boxes such as div 1 as margin-bottom 10px and div2 as margin-top 20px collapse it wont give
+add 30px space between 2divs. only horizontal divs adds space according to its margin given.
+
+margins can have negative values.
+
+Padding:
+It doesnt have negative values.
+
+Span comes in the same line. 
+
+Display:
+since divs are always block elements, inorder to make 2 divs adjacent to each other we use display:inline-block . 
+and some gap is present so we set margins to negative.
+
+<Aside></Aside>:
+It is used for making context to one end.
+
+display : inline-block
+width :20%
+vertical-align :top (it goes to top corner)
+
+Position :
+Absolute , left : It makes the left adjustment to its parent, no space is reserved and parent div should specify it as relative.
+Relative ,left : It makes adjustment to its own position and takes its full space 
+
+Box-Sizing:
+Border-box : It doesnt include the border and padding for width and height
+Content-box : It includes both border and padding for width and height 
+
+Overflow:
+scroll/auto : if content is too big than the div then it is said to scroll or auto
+
+Flex: It gives flexibiliy to arrange the items together.
+
+display : flex;
+flex-direction : row 
+flex-wrap : wrap 
+justify-content : space-around
+<align-items:center
+
+wrap makes the elements to use multiple lines in the container.
+
+Flex grow : It takes the remaining space  of the container  to grow 
+    so whole container - occupied container  = remaining space 
+
+Flex shrink : if there is no space then it shrinks.
