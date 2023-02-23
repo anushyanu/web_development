@@ -1,0 +1,24 @@
+.cube{
+    height : 400px;
+    width : 400px;
+    position: relative;
+    background-color: aqua;
+
+}
+
+.one-face{
+    height : 100px;
+    width :100px;
+    
+    background-color: blue;
+    
+}
+.two-face{
+    height : 100px;
+    width :100px;
+    position : absolute;
+    background-color: pink;
+    top : 20px;
+    left : 20px;
+}
+}
